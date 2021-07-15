@@ -56,7 +56,7 @@
 
     }
     
-    //$conn = null;
+    $conn = null;
 
 
 
