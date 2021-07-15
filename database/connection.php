@@ -43,7 +43,7 @@
 
     $conn = new PDO("$type:host=$host;dbname=$database", $user, $password);
     
-    $sql = "SELECT nome, data_de_nascimento FROM nome WHERE nome= '" . $_GET['nome'] . "'";
+    $sql = "SELECT nome, data_de_nascimento FROM nome WHERE (nome like '%" . $_GET['nome'] . "%')";
 
     $query = $conn->query($sql);
     $result = $query->fetch(PDO::FETCH_ASSOC);
