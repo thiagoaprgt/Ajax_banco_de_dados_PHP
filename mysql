@@ -1,0 +1,18 @@
+create database buscar;
+
+use buscar;
+
+create table nome (
+
+    id int(5) primary key not null auto_increment,
+   	nome varchar(30) not null,
+    data_de_nascimento varchar(10) not null
+);
+
+
+insert into `nome` (`id`, `nome`, `data_de_nascimento`) values (null, 'Goku', '3000');
+insert into `nome` (`id`, `nome`, `data_de_nascimento`) values (null, 'Naruto', '3654');
+insert into `nome` (`id`, `nome`, `data_de_nascimento`) values (null, 'Asta', '2589');
+insert into `nome` (`id`, `nome`, `data_de_nascimento`) values (null, 'Koha', '7985');
+insert into `nome` (`id`, `nome`, `data_de_nascimento`) values (null, 'Aang', '1234');
+
